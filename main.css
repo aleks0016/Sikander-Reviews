@@ -1,0 +1,363 @@
+body {
+  background-color: rgb(4, 4, 25);
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.center {
+  text-align: center;
+}
+
+.middle-left {
+  margin-left: 20%;
+  margin-right: 72%;
+}
+
+.middle-right {
+  margin-top: -636px;
+  margin-left: 65%;
+  margin-right: 24%;
+}
+
+.navbar {
+  background-color: rgb(4, 4, 45);
+  display: flex;
+  position: relative;
+  justify-content: center;
+  padding: 0 20px;
+  height: 70px;
+  white-space: nowrap;
+}
+
+.logo {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  left: 100px;
+  top: 0;
+  height: 100%;
+}
+
+
+@media (width < 1400px) {
+  .logo {
+    left: 10px;
+  }
+}
+
+@media (width < 1200px) {
+  .navbar {
+    justify-content: flex-end;
+  }
+}
+
+@media (width < 900px) {
+  .logo {
+    display: none;
+  }
+
+  .navbar {
+    justify-content: center;
+  }
+}
+
+.logo img {
+  display: block;
+  width: 50px;
+  height: auto;
+}
+
+.logo a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5em;
+  text-decoration: none;
+  color: white;
+}
+
+.menu {
+  height: 100%;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  height: 100%;
+}
+
+.menu ul li {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Add more CSS styles as needed */
+
+* {
+  box-sizing: border-box
+}
+
+/* Slideshow container */
+.slideshow-container {
+  height: 700px;
+  max-width: 675px;
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  margin-left: 50px;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: 40px;
+  margin-top: -60px;
+  margin-left: 80px;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: -650px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+.flex-container {
+  display: flex;
+  position: fixed;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  height: 670px;
+  margin-left: 4%;
+  gap: 50px;
+}
+
+@media (width < 1400px) {
+  .flex-container {
+    height: 500px;
+  }
+
+}
+
+/* Optional: Add some styling to the scrollbar */
+.flex-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.flex-container::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+
+.flex-container::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+
+
+.flex {
+  display: flex;
+  margin: 6px;
+  flex-direction: column;
+  align-items: center;
+  width: 220px;
+}
+
+@media (width < 1400px) {
+  .flex {
+    width: 200px;
+  }
+}
+
+.movie {
+  display: block;
+  margin-top: 100px;
+  margin-left: 75px;
+  height: 500px;
+}
+
+.smallpic {
+  height: 320px;
+  background: white;
+  transition: 2s;
+}
+
+.smallpic:hover {
+  scale: 1.05;
+  transition: 1s;
+}
+
+.bigpic {
+  height: 420px;
+  width: auto;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.bigpic:hover {
+  scale: 1.05;
+  transition: 10ms;
+  box-shadow: 0 0 15px 3px white;
+}
+
+
+.container {
+  display: flex;
+}
+
+.table-container {
+  margin-right: 20px;
+}
+
+.review-movie {
+  margin-top: -515px;
+  margin-left: 600px;
+  width: 600px;
+  height: 660px;
+  font-size: 14px;
+}
+
+.movietable {
+  margin-left: 300px;
+}
+
+.movieover {
+  text-align: center;
+}
+
+.stars {
+  width: 80px;
+  height: 80px;
+  margin-left: -100px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: 50px;
+}
+
+/* Style for the dropdown button */
+.dropdown-btn {
+  background-color: rgb(4, 4, 35);
+  font-size: 18px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+/* Style for the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  background-color: rgb(4, 4, 35);
+  font-size: 15px;
+  max-height: 60vh;
+  min-width: 300px;
+  box-shadow: 0 8px 16px 0 #ffffff56;
+}
+
+/* Style for each dropdown item */
+.dropdown-content a {
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Show the dropdown content when the dropdown button is clicked */
+.dropdown:hover .dropdown-content,
+.dropdown:focus-within .dropdown-content,
+.dropdown-btn:hover+.dropdown-content {
+  display: block;
+  z-index: 100;
+}
+
+i {
+  color: white;
+}
+
+/* Style the navbar */
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky+.content {
+  padding-top: 60px;
+}
+
+.table {
+  overflow: auto;
+  padding-block-end: 1em;
+}

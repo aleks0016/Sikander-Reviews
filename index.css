@@ -1,0 +1,21 @@
+body {
+    background-color: rgb(4, 4, 25);
+    padding: 30px;
+    font-family: Arial, sans-serif;
+}
+
+.center {
+    text-align: center;
+    color: #f6be00;
+}
+
+a {
+    text-decoration: none;
+}
+
+.center-image {
+    position: absolute;
+    transform: translate(-50% -50%);
+    height: 90%;
+    margin-left: 10%;
+}

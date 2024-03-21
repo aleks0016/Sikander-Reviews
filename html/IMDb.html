@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Top 10 Movies by IMDb / SR</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../table.css">
+    <link rel="icon" href="../img/Sikander-2.png">
+    <script src="../script.js" defer></script>
+    <!-- Link to Font Awesome -->
+    <script src="https://kit.fontawesome.com/d11723fac3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar sticky">
+        <div class="logo">
+            <a href="../index.html"><img src="../img/Sikander-2.png" alt="Sikander Logo">Sikander Reviews</a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="./main.html" class="dropdown-btn"><strong>Home</strong></a></li>
+                <li class="dropdown">
+                    <button class="dropdown-btn" onclick="toggleDropdown()">
+                        <a href="../movies/movies.html">Movies</a></button>
+                    <i class="fa-solid fa-arrow-down" style="margin-left: 5px;"></i>
+                    <div class="dropdown-content">
+                        <a href="./IMDb.html" target="_blank">Top 10 Movies by IMDb</a>
+                        <a href="./SR.html" target="_blank">Top 10 Movies by SR</a>
+                        <a href="./genre.html" target="_blank">Genre</a>
+                        <a href="./Calendar.html" target="_blank">Release Date</a>
+                        <a href="../movies/movies.html" target="_blank">Reviews</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <button class="dropdown-btn" onclick="toggleDropdown()">
+                        <a href="./series.html">TV Shows / <br> TV Series</a></button>
+                    <i class="fa-solid fa-arrow-down" style="margin-left: 5px;"></i>
+                    <div class="dropdown-content">
+                        <a href="" target="_blank"></a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <button class="dropdown-btn" onclick="toggleDropdown()">
+                        <a href="./celebrities.html">Actors</a></button>
+            </ul>
+        </div>
+    </div>
+
+    <h1 class="center" style="margin-top: 100px;">Top 10 Movies by 'IMDb' Ratings</h1>
+    <hr style="height: 3px; background-color: white; width: 850px;">
+
+    <table class="release-date-tables">
+        <thead>
+            <tr>
+                <th>Rank</th>
+                <th>Movie Name</th>
+                <th>Year</th>
+                <th>Duration</th>
+                <th>Age</th>
+                <th>Ratings</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="text-align: center;">1</td>
+                <td>The Shawshank Redemption</td>
+                <td style="text-align: center;">1994</td>
+                <td style="text-align: center;">2h 22m</td>
+                <td style="text-align: center;">R</td>
+                <td style="text-align: center;"><i class="fa-solid fa-star" style="color: #ffff00;"></i> 9.3</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">2</td>
+                <td>The Godfather</td>
+                <td style="text-align: center;">1972</td>
+                <td style="text-align: center;">2h 55m</td>
+                <td style="text-align: center;">R</td>
+                <td style="text-align: center;"><i class="fa-solid fa-star" style="color: #ffff00;"></i> 9.2</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">3</td>
+                <td>The Dark Knight</td>
+                <td style="text-align: center;">2008</td>
+                <td style="text-align: center;">2h 32m</td>
+                <td style="text-align: center;">PG-13</td>
+                <td style="text-align: center;"><i class="fa-solid fa-star" style="color: #ffff00;"></i> 9.0</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">4</td>
+                <td>The Godfather - Part II</td>
+                <td style="text-align: center;">1974</td>
+                <td style="text-align: center;">3h 22m</td>
+                <td style="text-align: center;">R</td>
+                <td style="text-align: center;"><i class="fa-solid fa-star" style="color: #ffff00;"></i> 9.0</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">5</td>
+                <td>12 Angry Men</td>
+                <td style="text-align: center;">1957</td>
+                <td style="text-align: center;">1h 36m</td>
+                <td style="text-align: center;">Approved</td>
+                <td style="text-align: center;"><i class="fa-solid fa-star" style="color: #ffff00;"></i> 9.0</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">6</td>
+                <td>Schindlers List</td>
+                <td style="text-align: center;">1993</td>
+                <td style="text-align: center;">3h 15m</td>
+                <td style="text-align: center;">R</td>
+                <td style="text-align: center;"><i class="fa-solid fa-star" style="color: #ffff00;"></i> 9.0</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">7</td>
+                <td>Lord of the Rings: The Return of the King</td>
+                <td style="text-align: center;">2003</td>
+                <td style="text-align: center;">3h 21m</td>
+                <td style="text-align: center;">PG-13</td>
+                <td style="text-align: center;"><i class="fa-solid fa-star" style="color: #ffff00;"></i> 9.0</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">8</td>
+                <td>Pulp Fiction</td>
+                <td style="text-align: center;">1994</td>
+                <td style="text-align: center;">2h 34m</td>
+                <td style="text-align: center;">R</td>
+                <td style="text-align: center;"><i class="fa-solid fa-star" style="color: #ffff00;"></i>8.9</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">9</td>
+                <td>Lord of the Rings: The Fellowship of the Ring</td>
+                <td style="text-align: center;">2001</td>
+                <td style="text-align: center;">2h 58m</td>
+                <td style="text-align: center;">PG-13</td>
+                <td style="text-align: center;"><i class="fa-solid fa-star" style="color: #ffff00;"></i>8.9</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">10</td>
+                <td>The Good, the Bad and the Ugly</td>
+                <td style="text-align: center;">1966</td>
+                <td style="text-align: center;">2h 41m</td>
+                <td style="text-align: center;">Approved</td>
+                <td style="text-align: center;"><i class="fa-solid fa-star" style="color: #ffff00;"></i>8.8</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h1 class="center" style="margin-top: 300px;">Top 10 Movies by 'Sikander Reviews' Ratings</h1>
+    <hr style="height: 3px; background-color: white; width: 850px;">
+
+    <table class="release-date-tables">
+        <thead>
+            <tr>
+                <th>Rank</th>
+                <th>Movie Name</th>
+                <th>Year</th>
+                <th>Duration</th>
+                <th>Age</th>
+                <th>Ratings</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="text-align: center;">1</td>
+                <td>The King's Choice | Kongens nei</td>
+                <td style="text-align: center;">2016</td>
+                <td style="text-align: center;">2h 13m</td>
+                <td style="text-align: center;">12</td>
+                <td style="text-align: center;"><i class="fa-solid fa-star" style="color: #ffff00;"></i> 10/10</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">2</td>
+                <td>Max Manus: Man of War</td>
+                <td style="text-align: center;">2008</td>
+                <td style="text-align: center;">1t 58m</td>
+                <td style="text-align: center;">12</td>
+                <td style="text-align: center;"><i class="fa-solid fa-star" style="color: #ffff00;"></i> 10/10</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">3</td>
+                <td>Top Gun: Maverick</td>
+                <td style="text-align: center;">2022</td>
+                <td style="text-align: center;">2t 10m</td>
+                <td style="text-align: center;">12</td>
+                <td style="text-align: center;"><i class="fa-solid fa-star" style="color: #ffff00;"></i> 10/10</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">4</td>
+                <td>Johnny English Strikes Again</td>
+                <td style="text-align: center;">2018</td>
+                <td style="text-align: center;">1h 29m</td>
+                <td style="text-align: center;">PG</td>
+                <td style="text-align: center;"><i class="fa-solid fa-star" style="color: #ffff00;"></i> 9/10</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">5</td>
+                <td>Johnny English</td>
+                <td style="text-align: center;">2003</td>
+                <td style="text-align: center;">1h 27m</td>
+                <td style="text-align: center;">PG</td>
+                <td style="text-align: center;"><i class="fa-solid fa-star" style="color: #ffff00;"></i> 9/10</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">6</td>
+                <td>Dune: Part Two</td>
+                <td style="text-align: center;">2023</td>
+                <td style="text-align: center;">2h 46m</td>
+                <td style="text-align: center;">PG-13</td>
+                <td style="text-align: center;"><i class="fa-solid fa-star" style="color: #ffff00;"></i> 9/10</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">7</td>
+                <td>One Flew Over the Cuckoo's Nest</td>
+                <td style="text-align: center;">1975</td>
+                <td style="text-align: center;">2h 13m</td>
+                <td style="text-align: center;">R</td>
+                <td style="text-align: center;"><i class="fa-solid fa-star" style="color: #ffff00;"></i> 9/10</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">8</td>
+                <td>There's Something in the Barn</td>
+                <td style="text-align: center;">2022</td>
+                <td style="text-align: center;">1h 40m</td>
+                <td style="text-align: center;">R</td>
+                <td style="text-align: center;"><i class="fa-solid fa-star" style="color: #ffff00;"></i> 8/10</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">9</td>
+                <td>The Day Will Come | Der Kommer En Dag</td>
+                <td style="text-align: center;">2016</td>
+                <td style="text-align: center;">1h 59m</td>
+                <td style="text-align: center;">12</td>
+                <td style="text-align: center;"><i class="fa-solid fa-star" style="color: #ffff00;"></i> 8/10</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">10</td>
+                <td>The Hunger Games: The Ballad of Songbirds and Snakes</td>
+                <td style="text-align: center;">2023</td>
+                <td style="text-align: center;">2h 37m</td>
+                <td style="text-align: center;">PG-13</td>
+                <td style="text-align: center;"><i class="fa-solid fa-star" style="color: #ffff00;"></i> 8/10</td>
+            </tr>
+            
+        </tbody>
+    </table>
+</body>
+</html>

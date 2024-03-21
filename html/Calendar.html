@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../table.css">
+    <link rel="icon" href="../img/Sikander-2.png">
+    <script src="../script.js" defer></script>
+    <!-- Link to Font Awesome -->
+    <script src="https://kit.fontawesome.com/d11723fac3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar sticky">
+        <div class="logo">
+            <a href="../index.html"><img src="../img/Sikander-2.png" alt="Sikander Logo">Sikander Reviews</a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="./main.html" class="dropdown-btn"><strong>Home</strong></a></li>
+                <li class="dropdown">
+                    <button class="dropdown-btn" onclick="toggleDropdown()">
+                        <a href="../movies/movies.html">Movies</a></button>
+                    <i class="fa-solid fa-arrow-down" style="margin-left: 5px;"></i>
+                    <div class="dropdown-content">
+                        <a href="./IMDb.html" target="_blank">Top 10 Movies by IMDb</a>
+                        <a href="./SR.html" target="_blank">Top 10 Movies by SR</a>
+                        <a href="./genre.html" target="_blank">Genre</a>
+                        <a href="./Calendar.html" target="_blank">Release Date</a>
+                        <a href="../movies/movies.html" target="_blank">Reviews</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <button class="dropdown-btn" onclick="toggleDropdown()">
+                        <a href="./series.html">TV Shows / <br> TV Series</a></button>
+                    <i class="fa-solid fa-arrow-down" style="margin-left: 5px;"></i>
+                    <div class="dropdown-content">
+                        <a href="" target="_blank"></a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <button class="dropdown-btn" onclick="toggleDropdown()">
+                        <a href="./celebrities.html">Actors</a></button>
+            </ul>
+        </div>
+    </div>
+
+    <h1 class="center" style="margin-top: 100px;">Calendar</h1>
+    <hr style="height: 3px; background-color: white; width: 1000px;">
+
+    <table class="release-date-table">
+        <thead>
+            <tr>
+                <td>
+                    <h1>2024</h1>
+                </td>
+            </tr>
+            <tr>
+                <th>Title</th>
+                <th>Genre</th>
+                <th>IMDb</th>
+                <th>SR</th>
+                <th>Release Date</th>
+                <th>Trailer</th>
+            </tr>
+            <tr style="background-color: rgb(4,4, 45);">
+                <td>Dune: Part Two</td>
+                <td>Action / Adventure / Drama</td>
+                <td>9.0/10</td>
+                <td>9/10</td>
+                <td>March 1, 2024</td>
+                <td><a href="https://www.youtube.com/watch?v=Way9Dexny3w" target="_blank"><i
+                            class="fa-brands fa-google-play"></i></a></td>
+            </tr>
+            <tr>
+                <td>
+                    <h1>2023</h1>
+                </td>
+            </tr>
+            <tr>
+                <th>Title</th>
+                <th>Genre</th>
+                <th>IMDb</th>
+                <th>SR</th>
+                <th>Release Date</th>
+                <th>Trailer</th>
+            </tr>
+            <tr style="background-color: rgb(4,4, 45);">
+                <td>The Hunger Games: Ballad of Songbirds and Snakes</td>
+                <td>Action / Adventure / Drama</td>
+                <td>6.8/10</td>
+                <td>10/10</td>
+                <td>November 17, 2023</td>
+                <td><a href="https://www.youtube.com/watch?v=RDE6Uz73A7g" target="_blank"><i
+                            class="fa-brands fa-google-play"></i></a></td>
+            </tr>
+            <tr>
+                <td>There's Something in the Barn</td>
+                <td>Comedy / Fantasy / Horror</td>
+                <td>5.5/10</td>
+                <td>8/10</td>
+                <td>November 10, 2023</td>
+                <td><a href="https://youtu.be/qmbKcSkd9q0" target="_blank"><i class="fa-brands fa-google-play"></i></a>
+                </td>
+            </tr>
+            <tr style="background-color: rgb(4,4, 45);">
+                <td>Five Nights at Freddy's</td>
+                <td>Horror / Mystery / Thriller</td>
+                <td>5.5/10</td>
+                <td>6/10</td>
+                <td>October 27, 2023</td>
+                <td><a href="https://www.youtube.com/watch?v=0VH9WCFV6XQ" target="_blank"><i
+                            class="fa-brands fa-google-play"></i></a></td>
+            </tr>
+            <tr>
+                <td>Barbie</td>
+                <td>Adventure / Comedy / Fantasy</td>
+                <td>6.9/10</td>
+                <td>7/10</td>
+                <td>July 21, 2023</td>
+                <td><a href="https://www.youtube.com/watch?v=pBk4NYhWNMM" target="_blank"><i
+                            class="fa-brands fa-google-play"></i></a></td>
+            </tr>
+            <tr>
+                <td>
+                    <h1>2022</h1>
+                </td>
+            </tr>
+            <tr>
+                <th>Title</th>
+                <th>Genre</th>
+                <th>IMDb</th>
+                <th>SR</th>
+                <th>Release Date</th>
+                <th>Trailer</th>
+            </tr>
+            <tr style="background-color: rgb(4,4, 45);">
+                <td>Top Gun: Maverick</td>
+                <td>Action / Drama</td>
+                <td>8.2/10</td>
+                <td>10/10</td>
+                <td>May 27, 2022</td>
+                <td><a href="https://www.youtube.com/watch?v=giXco2jaZ_4" target="_blank"><i
+                            class="fa-brands fa-google-play"></i></a></td>
+            </tr>
+            <tr>
+                <td>
+                    <h1>2020</h1>
+                </td>
+            </tr>
+            <tr>
+                <th>Title</th>
+                <th>Genre</th>
+                <th>IMDb</th>
+                <th>SR</th>
+                <th>Release Date</th>
+                <th>Trailer</th>
+            </tr>
+            <tr style="background-color: rgb(4,4, 45);">
+                <td>Asphalt Burning (Original: Børning 3)</td>
+                <td>Action / Comedy</td>
+                <td>5.2/10</td>
+                <td>7/10</td>
+                <td>October 14, 2020</td>
+                <td><a href="https://www.youtube.com/watch?v=ViUFEs5cyhY" target="_blank"><i
+                            class="fa-brands fa-google-play"></i></a></td>
+            </tr>
+            <tr>
+                <td>
+                    <h1>2018</h1>
+                </td>
+            </tr>
+            <tr>
+                <th>Title</th>
+                <th>Genre</th>
+                <th>IMDb</th>
+                <th>SR</th>
+                <th>Release Date</th>
+                <th>Trailer</th>
+            </tr>
+            <tr style="background-color: rgb(4,4, 45);">
+                <td>Johnny English Strikes Again</td>
+                <td>Action / Adventure / Comedy</td>
+                <td>6.2/10</td>
+                <td>8/10</td>
+                <td>October 26, 2018</td>
+                <td><a href="" target="_blank"><i
+                            class="fa-brands fa-google-play"></i></a></td>
+            </tr>
+            <tr>
+                <td>
+                    <h1>2017</h1>
+                </td>
+            </tr>
+            <tr>
+                <th>Title</th>
+                <th>Genre</th>
+                <th>IMDb</th>
+                <th>SR</th>
+                <th>Release Date</th>
+                <th>Trailer</th>
+            </tr>
+            <tr style="background-color: rgb(4,4, 45);">
+                <td>AlphaGo</td>
+                <td>Documentary / Sport</td>
+                <td>7.8/10</td>
+                <td>8/10</td>
+                <td>September 29, 2017</td>
+                <td><a href="https://www.youtube.com/watch?v=8tq1C8spV_g" target="_blank"><i
+                            class="fa-brands fa-google-play"></i></a></td>
+            </tr>
+            <tr>
+                <td>
+                    <h1>2016</h1>
+                </td>
+            </tr>
+            <tr>
+                <th>Title</th>
+                <th>Genre</th>
+                <th>IMDb</th>
+                <th>SR</th>
+                <th>Release Date</th>
+                <th>Trailer</th>
+            </tr>
+            <tr style="background-color: rgb(4,4, 45);">
+                <td>Burning 2 (Original Børning 2)</td>
+                <td>Action / Comedy</td>
+                <td>5.9/10</td>
+                <td>8/10</td>
+                <td>October 12, 2016</td>
+                <td><a href="https://www.youtube.com/watch?v=gEKL_GJFSwE" target="_blank"><i
+                            class="fa-brands fa-google-play"></i></a></td>
+            </tr>
+            <tr>
+                <td>The King's Choice (Original: Kongens nei)</td>
+                <td>Biography / Drama / History</td>
+                <td>7.1/10</td>
+                <td>10/10</td>
+                <td>September 23, 2016</td>
+                <td><a href="https://www.youtube.com/watch?v=ByMLGti4wB0" target="_blank"><i
+                            class="fa-brands fa-google-play"></i></a></td>
+            </tr>
+            <tr style="background-color: rgb(4,4, 45);">
+                <td>The Day Will Come (Original: Der kommer en dag)</td>
+                <td>Drama</td>
+                <td>7.9/10</td>
+                <td>8/10</td>
+                <td>April 21, 2016</td>
+                <td><a href="https://www.youtube.com/watch?v=pK_Q5TO4O8A" target="_blank"><i
+                            class="fa-brands fa-google-play"></i></a></td>
+            </tr>
+            <tr>
+                <td>
+                    <h1>2015</h1>
+                </td>
+            </tr>
+            <tr>
+                <th>Title</th>
+                <th>Genre</th>
+                <th>IMDb</th>
+                <th>SR</th>
+                <th>Release Date</th>
+                <th>Trailer</th>
+            </tr>
+            <tr style="background-color: rgb(4,4, 45);">
+                <td>The Hunger Games: Mockingjay - Part 2</td>
+                <td>Action / Adventure / Sci-Fi</td>
+                <td>6.5/10</td>
+                <td>8/10</td>
+                <td>November 20, 2015</td>
+                <td><a href="https://www.youtube.com/watch?v=n-7K_OjsDCQ" target="_blank"><i
+                            class="fa-brands fa-google-play"></i></a></td>
+            </tr>
+            <tr>
+                <td>
+                    <h1>2014</h1>
+                </td>
+            </tr>
+            <tr>
+                <th>Title</th>
+                <th>Genre</th>
+                <th>IMDb</th>
+                <th>SR</th>
+                <th>Release Date</th>
+                <th>Trailer</th>
+            </tr>
+            <tr style="background-color: rgb(4,4, 45);">
+                <td>The Hunger Games: Mockingjay Part 1</td>
+                <td>Action / Adventure / Sci-Fi</td>
+                <td>6.6/10</td>
+                <td>8/10</td>
+                <td>November 21, 2014</td>
+                <td><a href="https://www.youtube.com/watch?v=C_Tsj_wTJkQ" target="_blank"><i
+                            class="fa-brands fa-google-play"></i></a></td>
+            </tr>
+            <tr>
+                <td>Burning (Original: Børning)</td>
+                <td>Action / Comedy</td>
+                <td>6.2/10</td>
+                <td>8/10</td>
+                <td>August 13, 2014</td>
+                <td><a href="https://www.youtube.com/watch?v=AlY1Q-wA-Ms" target="_blank"><i
+                            class="fa-brands fa-google-play"></i></a></td>
+            </tr>
+            <tr>
+                <td>
+                    <h1>2013</h1>
+                </td>
+            </tr>
+            <tr>
+                <th>Title</th>
+                <th>Genre</th>
+                <th>IMDb</th>
+                <th>SR</th>
+                <th>Release Date</th>
+                <th>Trailer</th>
+            </tr>
+            <tr style="background-color: rgb(4,4, 45);">
+                <td>The Hunger Games: Catching Fire</td>
+                <td>Action / Adventure / Sci-Fi</td>
+                <td>7.5/10</td>
+                <td>8/10</td>
+                <td>November 22, 2013</td>
+                <td><a href="https://www.youtube.com/watch?v=MkvUNfySGQU" target="_blank"><i
+                            class="fa-brands fa-google-play"></i></a></td>
+            </tr>
+            <tr>
+                <td>
+                    <h1>2012</h1>
+                </td>
+            </tr>
+            <tr>
+                <th>Title</th>
+                <th>Genre</th>
+                <th>IMDb</th>
+                <th>SR</th>
+                <th>Release Date</th>
+                <th>Trailer</th>
+            </tr>
+            <tr style="background-color: rgb(4,4, 45);">
+                <td>The Dictator</td>
+                <td>Comedy</td>
+                <td>6.4/10</td>
+                <td>6/10</td>
+                <td>May 16, 2012</td>
+                <td><a href="https://www.youtube.com/watch?v=BegO9nKUsBY" target="_blank"><i
+                            class="fa-brands fa-google-play"></i></a></td>
+            </tr>
+            <tr>
+                <td>The Hunger Games</td>
+                <td>Action / Adventure / Sci-Fi</td>
+                <td>7.2/10</td>
+                <td>8/10</td>
+                <td>March 23, 2012</td>
+                <td><a href="https://www.youtube.com/watch?v=mfmrPu43DF8" target="_blank"><i
+                            class="fa-brands fa-google-play"></i></a></td>
+            </tr>
+            <tr>
+                <td>
+                    <h1>2011</h1>
+                </td>
+            </tr>
+            <tr>
+                <th>Title</th>
+                <th>Genre</th>
+                <th>IMDb</th>
+                <th>SR</th>
+                <th>Release Date</th>
+                <th>Trailer</th>
+            </tr>
+            <tr style="background-color: rgb(4,4, 45);">
+                <td>Johnny English Reborn</td>
+                <td>Action / Adventure / Comedy</td>
+                <td>6.3/10</td>
+                <td>8.5/10</td>
+                <td>October 21, 2011</td>
+                <td><a href="https://www.youtube.com/watch?v=wCsSzZU-sQ4" target="_blank"><i
+                            class="fa-brands fa-google-play"></i></a></td>
+            </tr>
+            <tr>
+                <td>
+                    <h1>2008</h1>
+                </td>
+            </tr>
+            <tr>
+                <th>Title</th>
+                <th>Genre</th>
+                <th>IMDb</th>
+                <th>SR</th>
+                <th>Release Date</th>
+                <th>Trailer</th>
+            </tr>
+            <tr style="background-color: rgb(4,4, 45);">
+                <td>Max Manus: Man of War (Original: Max Manus)</td>
+                <td>Action / Biography / Crime</td>
+                <td>7.3/10</td>
+                <td>9/10</td>
+                <td>December 19, 2008</td>
+                <td><a href="https://www.youtube.com/watch?v=WbK4WTQFf9U" target="_blank"><i
+                            class="fa-brands fa-google-play"></i></a></td>
+            </tr>
+            <tr>
+                <td>
+                    <h1>2003</h1>
+                </td>
+            </tr>
+            <tr>
+                <th>Title</th>
+                <th>Genre</th>
+                <th>IMDb</th>
+                <th>SR</th>
+                <th>Release Date</th>
+                <th>Trailer</th>
+            </tr>
+            <tr style="background-color: rgb(4,4, 45);">
+                <td>Johnny English</td>
+                <td>Action / Adventure / Comedy</td>
+                <td>6.2/10</td>
+                <td>9/10</td>
+                <td>July 18, 2003</td>
+                <td><a href="https://www.youtube.com/watch?v=EG0MR5dFz7E" target="_blank"><i
+                            class="fa-brands fa-google-play"></i></a></td>
+            </tr>
+        </thead>
+    </table>
+</body>
+
+</html>
